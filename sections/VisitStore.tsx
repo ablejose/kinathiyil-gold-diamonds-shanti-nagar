@@ -25,7 +25,7 @@ export function VisitStore() {
           <div className="mt-12 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
             <div className="marquee-rtl flex w-max gap-6">
               {[...BRAND.storeImages, ...BRAND.storeImages].map((src, index) => (
-                <div key={index} className="w-44 shrink-0 sm:w-52 md:w-56">
+                <div key={index} className="w-56 shrink-0 sm:w-64 md:w-72">
                   <StoreImage
                     src={src}
                     alt={`${BRAND.businessName} storefront view ${(index % BRAND.storeImages.length) + 1}`}
