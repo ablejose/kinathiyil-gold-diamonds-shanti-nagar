@@ -15,7 +15,7 @@ export function StoryChapters() {
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-16">
             <div className="md:col-span-5">
               <Reveal>
-                <blockquote className="font-display text-display-m text-ivory">
+                <blockquote className="font-display text-display-m font-bold text-gold">
                   {chapter.quote}
                 </blockquote>
                 <p className="mt-6 max-w-md font-sans text-body-lg text-muted">
