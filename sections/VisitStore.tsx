@@ -21,16 +21,20 @@ export function VisitStore() {
           />
         </Reveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {BRAND.storeImages.map((src, index) => (
-            <Reveal key={src} delay={index * 0.08}>
-              <StoreImage
-                src={src}
-                alt={`${BRAND.businessName} storefront view ${index + 1}`}
-              />
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <div className="mt-12 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+            <div className="marquee-rtl flex w-max gap-6">
+              {[...BRAND.storeImages, ...BRAND.storeImages].map((src, index) => (
+                <div key={index} className="w-44 shrink-0 sm:w-52 md:w-56">
+                  <StoreImage
+                    src={src}
+                    alt={`${BRAND.businessName} storefront view ${(index % BRAND.storeImages.length) + 1}`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
 
         <Reveal>
           <div className="mt-12 flex flex-col gap-6 border-t border-border pt-10 md:flex-row md:items-end md:justify-between">

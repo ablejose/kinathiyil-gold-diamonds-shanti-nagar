@@ -7,21 +7,22 @@ interface StoreImageProps {
 }
 
 /**
- * Responsive, lazy-loaded storefront image with rounded corners (Document 2 §7).
- * Uses next/image for optimization and correct sizing (Document 3 §8).
+ * Responsive, lazy-loaded storefront image with soft rounded corners and a
+ * gentle zoom on hover (Document 2 §7). Uses next/image for optimization.
  */
 export function StoreImage({ src, alt, priority = false }: StoreImageProps) {
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-border">
+    <div className="group relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-gold/20 shadow-xl shadow-black/40 ring-1 ring-white/5">
       <Image
         src={src}
         alt={alt}
         fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="object-cover"
+        sizes="(max-width: 768px) 60vw, 20vw"
+        className="object-cover transition-transform duration-700 ease-lux group-hover:scale-105"
         priority={priority}
         loading={priority ? undefined : "lazy"}
       />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
     </div>
   );
 }
