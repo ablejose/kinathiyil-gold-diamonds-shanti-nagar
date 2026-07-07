@@ -1,5 +1,6 @@
 import { BRAND } from "@/config/brand";
 import { Button } from "@/components/Button";
+import { telHref } from "@/lib/format";
 
 /**
  * Full-viewport hero with an autoplay, muted, looping Cloudinary film behind
@@ -26,8 +27,11 @@ export function Hero() {
         <div className="max-w-2xl">
           <h1 className="font-display text-display-xl text-gold-sweep">{BRAND.businessName}</h1>
           <p className="mt-6 font-sans text-body-lg text-gold">{BRAND.tagline}</p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button href="#visit-store">Visit Store</Button>
+            <Button href={telHref(BRAND.phone)} variant="secondary">
+              Call Now
+            </Button>
           </div>
         </div>
       </div>
