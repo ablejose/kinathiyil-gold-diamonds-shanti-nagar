@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useScrolled } from "@/hooks/useScrolled";
 import { BRAND } from "@/config/brand";
@@ -18,6 +18,25 @@ const LINKS = [
 export function Navbar() {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
+
+  // While the mobile menu is open, lock the page scroll so a scroll gesture
+  // first dismisses the menu ("goes back"); normal scrolling resumes only
+  // after the menu has closed.
+  useEffect(() => {
+    if (!open) return;
+
+    const close = () => setOpen(false);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("wheel", close, { passive: true });
+    window.addEventListener("touchmove", close, { passive: true });
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("wheel", close);
+      window.removeEventListener("touchmove", close);
+    };
+  }, [open]);
 
   return (
     <header
