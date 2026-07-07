@@ -47,9 +47,9 @@ export const BRAND: BrandConfig = {
       segments: { startAt: 32, loopEnd: 40 },
     },
     {
-      quote: "Where tradition meets timeless beauty.",
+      quote: "മണ്ണാർക്കാടിന്റെ ഹൃദയത്തിൽ നിന്ന്.",
       description:
-        "Rooted in Mannarkkad and Edathanattukara, our collections honour heritage while embracing a modern, understated sense of luxury.",
+        "ഈ നാടിന്റെ പൈതൃകവും പുതുമയും ഒത്തുചേരുന്ന ആഭരണങ്ങൾ. തലമുറകളായി നിങ്ങൾ നൽകുന്ന വിശ്വാസത്തിന് സ്വർണ്ണത്തേക്കാൾ തിളക്കമുണ്ട്.",
       video:
         "https://res.cloudinary.com/fylz5e3j/video/upload/v1782936959/VN20260702_013328_tbexfn.mp4",
       segments: { startAt: 16, loopEnd: 24 },
