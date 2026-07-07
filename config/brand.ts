@@ -30,17 +30,17 @@ export const BRAND: BrandConfig = {
   // adjust or remove its `segments`.
   storyVideos: [
     {
-      quote: "Every masterpiece begins with a moment.",
+      quote: "ലാളിത്യത്തിലെ പൂർണ്ണത.",
       description:
-        "From the first spark of inspiration to the final polish, each piece is shaped with patience and intent — designed to be worn, treasured and remembered.",
+        "അണിയാൻ തീരെ ഭാരമില്ലാത്ത, എന്നാൽ കണ്ണഞ്ചിപ്പിക്കുന്ന ഡിസൈനുകൾ. നിങ്ങളുടെ ഓരോ സാധാരണ ദിവസത്തെയും മനോഹരമാക്കാൻ ഇവ മതിയാകും.",
       video:
         "https://res.cloudinary.com/fylz5e3j/video/upload/v1782936959/VN20260702_013328_tbexfn.mp4",
       segments: { startAt: 0, loopEnd: 8 },
     },
     {
-      quote: "Elegance that never fades.",
+      quote: "കൈകളിൽ വിരിയുന്ന വിസ്മയം.",
       description:
-        "Aesthetic, lightweight designs crafted to move with you — refined enough for every day, distinguished enough for the occasions that matter most.",
+        "ഓരോ ആഭരണവും ഓരോ കലാരൂപമാണ്. അതിസൂക്ഷ്മമായി, തികഞ്ഞ പൂർണ്ണതയോടെ രൂപപ്പെടുത്തിയെടുത്തവ. നിങ്ങളുടെ സ്വപ്നങ്ങൾക്ക് സ്വർണ്ണത്തിൽ ജീവൻ വയ്ക്കുമ്പോൾ.",
       video:
         "https://res.cloudinary.com/fylz5e3j/video/upload/v1782936959/VN20260702_013328_tbexfn.mp4",
       // Final part of the 40s film (last ~8 seconds).
