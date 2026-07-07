@@ -54,9 +54,11 @@ body {
   background-image: linear-gradient(
     100deg,
     #f2d28b 0%,
-    #f2d28b 38%,
-    #fff6df 50%,
-    #f2d28b 62%,
+    #f2d28b 22%,
+    #fbe6b3 36%,
+    #fff9ea 50%,
+    #fbe6b3 64%,
+    #f2d28b 78%,
     #f2d28b 100%
   );
   background-size: 200% auto;
