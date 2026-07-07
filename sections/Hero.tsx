@@ -23,10 +23,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
 
       <div className="container-lux relative z-10">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="max-w-2xl">
           <h1 className="font-display text-display-xl text-gold-sweep">{BRAND.businessName}</h1>
           <p className="mt-6 font-sans text-body-lg text-gold">{BRAND.tagline}</p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10">
             <Button href="#visit-store">Visit Store</Button>
           </div>
         </div>
