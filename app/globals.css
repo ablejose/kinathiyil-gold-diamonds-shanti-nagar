@@ -64,7 +64,14 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: gold-sweep 20s linear infinite;
+  /* Give descenders (e.g. the "y" in Hayaz) room so background-clip does not
+     crop them, and offset so the title is not pushed lower. */
+  display: inline-block;
+  line-height: 1.15;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  margin-top: -0.06em;
+  animation: gold-sweep 6s linear infinite;
 }
 
 @layer components {
