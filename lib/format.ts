@@ -35,3 +35,21 @@ export function socialHandle(url: string): string {
   const handle = url.replace(/\/+$/, "").split("/").pop() ?? "";
   return handle ? `@${handle}` : url;
 }
+
+/**
+ * Split a brand/business name into a primary line (the main brand word) and a
+ * secondary descriptor line (e.g. "Gold", "Gold and Diamonds", "Jewellery").
+ * Only splits multi-word names whose combined letters exceed 7, so short or
+ * single-word names stay on a single line.
+ */
+export function splitBrandName(name: string): { primary: string; secondary: string } {
+  const trimmed = name.trim();
+  const words = trimmed.split(/\s+/);
+  const letterCount = trimmed.replace(/\s+/g, "").length;
+
+  if (words.length > 1 && letterCount > 7) {
+    return { primary: words[0], secondary: words.slice(1).join(" ") };
+  }
+
+  return { primary: trimmed, secondary: "" };
+}
