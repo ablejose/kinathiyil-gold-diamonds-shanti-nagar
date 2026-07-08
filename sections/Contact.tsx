@@ -27,8 +27,8 @@ export function Contact() {
       external: true,
     },
     { label: "Email", value: BRAND.email, href: BRAND.email ? `mailto:${BRAND.email}` : undefined },
-    { label: "Instagram", value: "@hayazgoldanddiamonds", href: BRAND.instagram, external: true },
-    { label: "Facebook", value: "facebook.com/hayazgold", href: BRAND.facebook, external: true },
+    { label: "Instagram", value: socialHandle(BRAND.instagram), href: BRAND.instagram, external: true },
+    { label: "Facebook", value: socialLabel(BRAND.facebook), href: BRAND.facebook, external: true },
     { label: "Opening Hours", value: BRAND.openingHours },
     { label: "Address", value: BRAND.address },
   ].filter((row) => row.value.trim().length > 0);

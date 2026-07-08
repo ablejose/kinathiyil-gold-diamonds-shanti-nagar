@@ -21,3 +21,17 @@ export function whatsappHref(whatsapp: string, message?: string): string {
   const base = `https://wa.me/${number}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
+
+/** Human-readable label for a social URL: strip protocol, "www." and trailing slash. */
+export function socialLabel(url: string): string {
+  return url
+    .replace(/^https?:\/\//, "")
+    .replace(/^www\./, "")
+    .replace(/\/+$/, "");
+}
+
+/** Derive an @handle from a profile URL (uses the last path segment). */
+export function socialHandle(url: string): string {
+  const handle = url.replace(/\/+$/, "").split("/").pop() ?? "";
+  return handle ? `@${handle}` : url;
+}
