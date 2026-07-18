@@ -3,7 +3,7 @@ import type { BrandConfig } from "@/types/brand";
 export const BRAND: BrandConfig = {
   businessName: "Kinathiyil Gold & Diamonds",
   tagline: "Timeless Gold, Diamond & Silver Jewellery in Perinthalmanna",
-  description: "Kinathiyil Gold & Diamonds is Perinthalmanna's trusted destination for gold, diamond and silver jewellery. Nestled in the heart of Shanti Nagar, Perinthalmanna, we bring you an exquisite collection of handcrafted gold ornaments, dazzling diamond pieces, and elegant silver jewellery — each crafted with passion and precision. Visit us and experience jewellery that tells your story.",
+  description: "Kinathiyil Gold & Diamonds is Perinthalmanna’s trusted destination for gold, diamond and silver jewellery. Nestled in the heart of Shanti Nagar, Perinthalmanna, we bring you an exquisite collection of handcrafted gold ornaments, dazzling diamond pieces, and elegant silver jewellery — each crafted with passion and precision. Visit us and experience jewellery that tells your story.",
   logo: "/icons/logo.svg",
   favicon: "/favicon.ico",
   heroVideo: "https://res.cloudinary.com/fylz5e3j/video/upload/v1782936959/VN20260702_013328_tbexfn.mp4",
@@ -48,9 +48,9 @@ export const BRAND: BrandConfig = {
     title: "Kinathiyil Gold & Diamonds | Jewellery in Perinthalmanna",
     description: "Kinathiyil Gold & Diamonds - gold, diamond and silver jewellery in Perinthalmanna, Kerala. Explore our stunning collections of traditional and modern designs.",
     keywords: ["Kinathiyil Gold & Diamonds", "jewellery Perinthalmanna", "gold jewellery Perinthalmanna", "diamond jewellery Perinthalmanna", "silver jewellery Perinthalmanna"],
-    canonical: "https://kinathiyil-gold-diamonds-shanti-nagar.vercel.app",
-    ogImage: "https://kinathiyil-gold-diamonds-shanti-nagar.vercel.app/images/store1.webp",
+    canonical: "https://kinathiyil-gold-diamonds-shanti-nag-beta.vercel.app",
+    ogImage: "https://kinathiyil-gold-diamonds-shanti-nag-beta.vercel.app/images/store1.webp",
   },
   faq: [],
-  whatsappMessage: "Hello Kinathiyil Gold & Diamonds, I'd like to know more about your jewellery collections.",
+  whatsappMessage: "Hello Kinathiyil Gold & Diamonds, I’d like to know more about your jewellery collections.",
 };
